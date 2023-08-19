@@ -212,6 +212,38 @@
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
+            "groupId" : "512848cf-9f32-3b69-a197-8c52dc432b36",
+            "id" : "eb3ff68f-15ad-3b05-a747-faea77d30dd1",
+            "instanceIdentifier" : "0fb63d08-018a-1000-7a94-361959a1d4ca",
+            "name" : "result",
+            "type" : "OUTPUT_PORT"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "512848cf-9f32-3b69-a197-8c52dc432b36",
+          "identifier" : "6d4be054-3658-3415-84c5-4d2446ec3380",
+          "instanceIdentifier" : "0fb67e86-018a-1000-b708-457b2c88fe65",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "512848cf-9f32-3b69-a197-8c52dc432b36",
+            "id" : "ee538581-9519-3ff4-a2e3-1476761fbfcd",
+            "instanceIdentifier" : "fae45268-0189-1000-8194-caccc1fd77a9",
+            "name" : "SaveToElasticsearch",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
             "comments" : "",
             "groupId" : "512848cf-9f32-3b69-a197-8c52dc432b36",
             "id" : "f1793a15-a00c-307b-983b-52989bddf800",
@@ -790,7 +822,21 @@
           "zIndex" : 0
         } ],
         "name" : "hashtag",
-        "outputPorts" : [ ],
+        "outputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "OUTPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "512848cf-9f32-3b69-a197-8c52dc432b36",
+          "identifier" : "eb3ff68f-15ad-3b05-a747-faea77d30dd1",
+          "instanceIdentifier" : "0fb63d08-018a-1000-7a94-361959a1d4ca",
+          "name" : "result",
+          "position" : {
+            "x" : 1028.3950263338604,
+            "y" : 1979.8203342998067
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "OUTPUT_PORT"
+        } ],
         "position" : {
           "x" : 1832.0,
           "y" : 1672.0
@@ -1269,7 +1315,7 @@
           "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "success", "failure", "retry", "errors" ],
+          "autoTerminatedRelationships" : [ "failure", "retry", "errors" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
