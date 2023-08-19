@@ -1,7 +1,7 @@
 flows:
   3e29209b-1643-41ee-8126-b92650702ae6: {ver: 2, file: hashtag.snapshot, comments: output
       port added, author: anonymous, created: 1692480811964, flowName: hashtag, flowDesc: ''}
-  1052899b-b36c-451f-a20b-fed54002c10e: {ver: 1, file: flights.snapshot, comments: '',
-    author: anonymous, created: 1692479424489, flowName: flights, flowDesc: ''}
+  1052899b-b36c-451f-a20b-fed54002c10e: {ver: 2, file: flights.snapshot, comments: input
+      port added, author: anonymous, created: 1692480825769, flowName: flights, flowDesc: ''}
 layoutVer: 1
 bucketId: 9419109f-5b6c-4a0a-bb5f-645211ac2e6a

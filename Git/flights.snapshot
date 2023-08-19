@@ -16,6 +16,38 @@
           "destination" : {
             "comments" : "",
             "groupId" : "d1674a1c-6e48-3dd0-9e11-deaa45769d87",
+            "id" : "8ac072aa-7bad-33f3-8cb4-a93c789e61f6",
+            "instanceIdentifier" : "66013245-21e8-3c0b-3071-85a42a50d37b",
+            "name" : "GetFlights",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "d1674a1c-6e48-3dd0-9e11-deaa45769d87",
+          "identifier" : "26726a24-33d2-3117-915f-d1283b37922d",
+          "instanceIdentifier" : "0fb71805-018a-1000-0f6d-5949b173eb78",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "" ],
+          "source" : {
+            "groupId" : "d1674a1c-6e48-3dd0-9e11-deaa45769d87",
+            "id" : "9628e05d-d4c7-341e-a94c-030dc5ad6959",
+            "instanceIdentifier" : "0fb704ba-018a-1000-361f-d57e632b3fc8",
+            "name" : "result",
+            "type" : "INPUT_PORT"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "d1674a1c-6e48-3dd0-9e11-deaa45769d87",
             "id" : "6dd61cff-d740-3f74-8055-895959458a13",
             "instanceIdentifier" : "520e7591-8bef-31a4-bd0a-802a0d1d2d5e",
             "name" : "SplitFlights",
@@ -149,7 +181,21 @@
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
         "identifier" : "d1674a1c-6e48-3dd0-9e11-deaa45769d87",
-        "inputPorts" : [ ],
+        "inputPorts" : [ {
+          "allowRemoteAccess" : false,
+          "componentType" : "INPUT_PORT",
+          "concurrentlySchedulableTaskCount" : 1,
+          "groupIdentifier" : "d1674a1c-6e48-3dd0-9e11-deaa45769d87",
+          "identifier" : "9628e05d-d4c7-341e-a94c-030dc5ad6959",
+          "instanceIdentifier" : "0fb704ba-018a-1000-361f-d57e632b3fc8",
+          "name" : "result",
+          "position" : {
+            "x" : 2028.350068804902,
+            "y" : 1800.5714262784882
+          },
+          "scheduledState" : "ENABLED",
+          "type" : "INPUT_PORT"
+        } ],
         "instanceIdentifier" : "0f412742-018a-1000-4eed-7314f33d4eb9",
         "labels" : [ ],
         "name" : "Flights",
