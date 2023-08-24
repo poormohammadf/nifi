@@ -1,4 +1,6 @@
 flows:
+  81348061-409c-4202-adf3-4b18eb25abfb: {ver: 1, file: stocks.snapshot, comments: tsetmc
+      pipline, author: anonymous, created: 1692894514871, flowName: stocks, flowDesc: ''}
   3e29209b-1643-41ee-8126-b92650702ae6: {ver: 4, file: hashtag.snapshot, comments: v1.5,
     author: anonymous, created: 1692894401276, flowName: hashtag, flowDesc: ''}
   1052899b-b36c-451f-a20b-fed54002c10e: {ver: 2, file: flights.snapshot, comments: input
